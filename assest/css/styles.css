@@ -1,0 +1,56 @@
+
+nav {
+
+    display: flex;
+    background-color: rgb(31, 30, 30);
+    color: white;
+
+}
+
+h1 {
+    background-color: teal;
+    padding: 2%;
+    margin: 10px 0 10px;
+}
+
+h2 {
+    /* display: block; */
+    font-size: 20px;
+    padding: 3%;
+    background-color: teal;
+    color: white;
+    /* margin-right: auto;  */
+    /* border: 20px; */
+    position: absolute;
+    bottom: 200px;
+    right: 40px
+}
+
+ul {
+    display: flex;
+    margin-left: auto;
+
+}
+nav li {
+    font-family: sans-serif;
+    font-weight:bold;
+    padding: 2%;
+    border: 5px solid black;
+    margin: 5px;
+    color: teal;
+    width: 125px;
+    text-align: center;
+}
+
+body {
+
+}
+
+img {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-position: center;
+}
