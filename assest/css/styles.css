@@ -1,31 +1,64 @@
+:root {
+--dark: #33393f;
+--darkblue:  rgb(1, 73, 73);
+--light: cyan;
+
+}
 
 nav {
 
     display: flex;
-    background-color: rgb(31, 30, 30);
+    background-color: var(--dark);
     color: white;
 
 }
 
+body {
+    background-color:rgb(207, 223, 245)
+}
+
+
 h1 {
-    background-color: teal;
+    font-size: 54px;
+    color: var(--dark);
+    background-color: var(--light);
     padding: 2%;
-    margin: 10px 0 10px;
+    margin: 12px 0 12px;
 }
 
 h2 {
     /* display: block; */
     font-size: 20px;
-    padding: 3%;
-    background-color: teal;
-    color: white;
+    padding: 2%;
+    background-color: var(--light);
+    color: black;
     /* margin-right: auto;  */
     /* border: 20px; */
     position: absolute;
-    bottom: 200px;
+    bottom: 440px;
     right: 40px
 }
 
+h3 {
+    font-size: 54px;
+    color: var(--darkblue);
+    padding: 2%;
+    border-right: 5px solid var(--darkblue);
+}
+
+h4{
+    font-size: 30px;
+    text-align: center;
+}
+
+h4 + p {
+   text-align: left;
+}
+
+
+p {
+    padding: 10px;
+}
 ul {
     display: flex;
     margin-left: auto;
@@ -34,17 +67,37 @@ ul {
 nav li {
     font-family: sans-serif;
     font-weight:bold;
+    font-size: 27px;
     padding: 2%;
-    border: 5px solid black;
+    border-bottom: 5px solid var(--light);
     margin: 5px;
-    color: teal;
+    color: var(--light);
+    width: 200px;
+    text-align: center;
+}
+
+section{
+    margin-left: 50px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-left: 50px;
+    display: flex;
+}
+
+footer li {
+    font-family: sans-serif;
+    font-weight:bold;
+    padding: 2%;
+    border-bottom: 5px solid var(--darkblue);
+    margin: 5px;
+    color: black;
     width: 125px;
     text-align: center;
 }
 
-body {
-
-}
 
 img {
     position: relative;
@@ -53,4 +106,15 @@ img {
     margin-bottom: 25px;
     background-size: cover;
     background-position: center;
+}
+
+
+.MainBox,
+.Box {
+    color: black;
+    background-color: var(--light);
+    text-align: left;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 10px;
 }
