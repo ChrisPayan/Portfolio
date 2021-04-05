@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assest/css/reset.css">
-    <link rel="stylesheet" href="./assest/css/styles.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
     
 </head>
 
@@ -22,13 +22,13 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">About me</a>
+              <a class="nav-link text-white" href="#aboutMe">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Work</a>
+              <a class="nav-link text-white" href="#workID">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Contact me</a>
+              <a class="nav-link text-white" href="#contactMeID">Contact me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white">Resume</a>
@@ -41,7 +41,7 @@
 
     <main>
 
-      <div><img class="imgBack" src="./assest/Backgroud.png" style="width:100%"></div> 
+      <div><img class="imgBack" src="./Backgroud.png" style="width:100%"></div> 
 
         <section class="row">
           <div class="heading">
@@ -49,59 +49,91 @@
           </div>
             <div class="content">
                 <p>Hi my name is Christian, Im a 21 year-old student at SDSU working towareds my CS major trying to make the best out of my abilities and where ever that takes me. </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequuntur iste labore quae vero, voluptatem nemo nam? Laborum corporis autem quidem, placeat quo, consequatur, tempora molestiae nam voluptatum mollitia dolorum?</p>
             </div>
         </section>
 
-        <section class="row">
-          <div class="heading">
-            <h3 id="work">Work</h3>
-          </div>
-            <div class="content">
-              <div class="content-row">
-                  <div class="mainBox">
-                    <div><img class="imageMain" src="./assest/codingImageTwo.jpg"></div>
-                    <h4 class="mainText">Surf Report</h4>
-                  </div>
-                </div>
-                <div class="content-row">
-                  <div class="smallBox">
-                    <div><img class="imageSmall" src="./assest/codingImageOne.jpg"></div>
-                    <h4>LED Wall</h4>
-                  </div>     
-                  <div class="smallBox">
-                    <div><img class="imageSmall" src="./assest/codingImageThree.jpg"></div>
-                    <h4>Calculator</h4>
-                  </div>
-                </div>
-                <div class="content-row">
-                  <div class="smallBox">
-                     <div><img class="imageSmall" src="./assest/codingImageFive.jpg"></div>
-                     <h4>Pastel Puzzels</h4>
-                   
-                  </div>
-                  <div class="smallBox">
-                    <div><img class="imageSmall" src="./assest/codingImageFour.jpg"></div>
-                    <h4>Run Buddy</h4>
-                  </div>
-                </div>
-            </div>
-        </section>  
+        <div class="container row col-12">
 
-        <footer class="row">
-          <div class="heading">
-            <h3 id="contactMe">Contact Me</h3>
-          </div>
-          <div class="content-row">
-            <ul class="footerBox">
-                <li><a href="#">619.860.6684</a></li>
-                <li><a href="#">payanstocks@gmail.com</a></li>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Spotify</a></li>
-            </ul>
-          </div>
-         </footer>
+            <div class="col-2">
+
+              <h3 id="workID">Work</h3>
+
+            </div>
+
+            <div class="col-10">
+
+                <div class="col mb-4 col-12 p-0 ">
+                    <a class="card custom-card-main" href="https://chrispayan.github.io/Day_Planner/">
+                        <img src="./codingImageOne.jpg" class="card-img-top imageMain">
+                    <div class="card-body">
+                        <h5 class="card-title">Day Planner</h5>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2">
+
+                    <div class="col mb-4 col-6">
+                        <a class="card custom-card-small" href="https://chrispayan.github.io/Password_Generator/">
+                          <img src="./codingImageTwo.jpg" class="card-img-top imageSmall">                        
+                          <div class="card-body">
+                            <h5 class="card-title">Password Generator</h5>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col mb-4 col-6">
+                      <div class="card custom-card-small">
+                        <img src="./codingImageThree.jpg" class="card-img-top imageSmall">                        
+                        <div class="card-body">
+                          <h5 class="card-title">HomeWO!rk1</h5>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="col mb-4 col-6">
+                    <div class="card custom-card-small">
+                      <img src="./codingImageFour.jpg" class="card-img-top imageSmall">                        
+                      <div class="card-body">
+                        <h5 class="card-title">HomeWO!rk1</h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="col mb-4 col-6">
+                  <div class="card custom-card-small">
+                    <img src="./codingImageFive.jpg" class="card-img-top imageSmall">                        
+                    <div class="card-body">
+                      <h5 class="card-title">HomeWO!rk1</h5>
+                  </div>
+                  </div>
+              </div>
+                </div> 
+
+            </div>
+
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light col-12">
+            <a class="navbar-brand col-2" id="contactMeID">Contact Me</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse d-flex justify-content-between col-10" id="navbarNav">
+              <ul class="navbar-nav col-12">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">619.860.6884</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">payanstocks@gmail.com</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/ChrisPayan">GitHub</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.linkedin.com/in/christian-payan-134a14208/">LinkIn</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
     </main>
 </body>
 </html>
