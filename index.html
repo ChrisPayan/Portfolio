@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./assest/css/reset.css">
     <link rel="stylesheet" href="./assest/css/styles.css">
     
@@ -12,26 +13,35 @@
 
 <body>
     <header>
-        <nav>
-            <h1>Christian Payan</h1>
-            <div><img class="selfie" src="./assest/SelfieCabo.JPG"></div>
-            <ul class="NavBar">
-               
-                <li><a href="#aboutMe">About Me</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contactMe">Contact Me</a></li>
-                <li>Resume</li>
-            </ul>
-            
-        </nav>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+        <a class="navbar-brand titleName" href="#">Christian Payan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
     </header>
 
     <main>
 
-        <div>
-            <img class="image-banner" src="./assest/spacebackground.jpg">
-            <h2>Cool Subtitle here!</h2>
-        </div>
+      <div><img class="imgBack" src="./assest/Backgroud.png" style="width:100%"></div> 
 
         <section class="row">
           <div class="heading">
@@ -50,7 +60,7 @@
             <div class="content">
               <div class="content-row">
                   <div class="mainBox">
-                    <div><img class="image-box" src="./assest/codingImageTwo.jpg"></div>
+                    <div><img class="imageMain" src="./assest/codingImageTwo.jpg"></div>
                     <h4 class="mainText">Surf Report</h4>
                   </div>
                 </div>
